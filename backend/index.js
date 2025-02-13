@@ -1,6 +1,7 @@
 const express = require ('express');
 const { createTodo, updateTodo } = require('./types');
-const app = express();
+
+const app = express(); 
 
 app.use(express.json())
 
@@ -13,6 +14,7 @@ app.post('/todo', function (req,res){
         })
         return;
     }
+
 
 })
 
@@ -29,6 +31,5 @@ app.put('/completed', function(req,res){
         })
         return;
     }
-
     
 })
